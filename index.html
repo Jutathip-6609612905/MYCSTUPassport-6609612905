@@ -5,73 +5,107 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MYCSTUPASSPORT css</title>
 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
 
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 
-        <style type="text/css">
+        <style>
             body{
                 font-family: 'Taviraj', serif;
             }
-        </style>
+            
+            [class*="col-"] {
+            float: left;
+            padding: 15px;
+            width: 100%;
+                }
+            /* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
 
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+        </style>
     </head>
         <body>
             <!-- header section start -->
-                <nav>
-                    <div class="logo">
-                        <h3>MYCSTUPASSPORT</h3>
-                    </div>
-        
-                    <ul class="menu">
-                        <li><a href="#Homepage">Homepage</a></li>
-                        <li><a href="#My advisor">My advisor</a></li>
-                        <li><a href="#My activities">My activities</a></li>
-                    </ul>
-                </nav>
-            <!-- header section end -->
-
-            <!-- about section start -->
-            <section class="about">
-                <div class="about-pics">
-                    <video src="VDO/IMG_8943.MOV"controls>
-                    </video>
+            <div class="logo">
+                <h3>MYCSTUPASSPORT</h3>
+            </div>
                 
-                    <div class="about-text">
+            <div class="row">
+                <div class="col-3 col-s-3 menu">
+                    <ul>
+                        <li>Homepage</li>
+                        <li>My advisor</li>
+                        <li>My activities</li>
+                    </ul>
+                </div>
+             <!-- header section end -->
+
+             <!-- about section start -->
+                    <div class="col-6 col-s-9 text">
                         <h1>ABOUT ME</h1>
                         <h4>HELLO, I'm</h4>
                         <h2>Jutathip Thangprasomsuk</h2>
                         <h4>My nickname is </h4>
                         <h2><q>Tonnam</q></h2>
+                        <video 
+                            width="600"
+                            src="VDO/IMG_8943.MOV"controls>
+                        </video>
+                            <h4>งานอดิเรก</h4>
+                            <p><li>ชอบเล่นเกม</li></p>
+                            <p><li>ฟังเพลง</li></p>
+                            <p><li>วาดภาพ</li></p>
+                            <h4>ชอบเล่นกีฬา</h4> 
+                            <p><li>แบดมินตัน</li></p4>
+                            <p><li>วอลเลย์บอล</li></p>
                     </div>
-                </div>
-            </section>
-            <!-- about section end -->
+             <!-- about section end -->
 
-            <!-- content section start -->
-            <section class="content">
-                <div class="main">
-                    
-                    <div class="content-text">
+             <!-- content section start -->
+                    <div class="col-3 col-s-12 main">
+                        <img src="image/pics.jpg"/>
                         <p><h4>ชื่อ-สกุล:</h4> จุฑาทิพย์ ตั้งประสมสุข</p>
                         <p><h4>ชื่อเล่น :</h4> ต้นน้ำ</p>
                         <p><h4>เกิดวันที่</h4> 19 กุมภาพันธ์ 2547 อายุ 19 ปี</p>
-                        <p><b>งานอดิเรก</b></p>
-                        <p><li>ชอบเล่นเกม</li></p>
-                        <p><li>ฟังเพลง</li></p>
-                        <p><li>วาดภาพ</li></p>
-                        <p><b>ชอบเล่นกีฬา</b></p> 
-                        <p><li>แบดมินตัน</li></p4>
-                        <p><li>วอลเลย์บอล</li></p>
-                        <p>ปัจจุบันกำลังศึกษาอยู่คณะวิทยาศาสตร์และเทคโนโลยี
-                        สาขาสถิติ มหาวิทยาลัยธรรมศาสตร์ ศูนย์รังสิต</p>
+                            <p>ปัจจุบันกำลังศึกษาอยู่คณะวิทยาศาสตร์และเทคโนโลยี
+                            สาขาสถิติ มหาวิทยาลัยธรรมศาสตร์ ศูนย์รังสิต</p>
                     </div>
-                    <img src="image/pics.jpg"/>
-                </div>
-            </section>
+            </div>
             <!-- content section end -->
 
             <!-- footer start -->
@@ -80,5 +114,5 @@
                 </div>
             <!-- footer end -->
 
-    </body>
+        </body>
 </html>
